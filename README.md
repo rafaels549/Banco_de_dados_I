@@ -37,11 +37,11 @@ nome                                          empresa referencia empresa        
 endereco referencia endereco                  motorista referencia motorista                   validade
 gerente  
 
-table_onibus                                   linha_onibus
-numero chave primaria                           id chave primaria
-placa unique                                    onibus_id referencia onibus
-ano                                             motorista_id referencia motorista
-tipo                                            dia_da_semana                                              
-capacidade                                      itinerário
-empresa referencia empresa                      horario_partida
-                                                horario_chegada
+table_onibus                                   linha_onibus                                  table_endereco
+numero chave primaria                           id chave primaria                             id chave primaria 
+placa unique                                    onibus_id referencia onibus                    cep  
+ano                                             motorista_id referencia motorista              logradouro
+tipo                                            dia_da_semana                                   numero  unique         
+capacidade                                      itinerário                                      complemento 
+empresa referencia empresa                      horario_partida                                  bairro
+                                                horario_chegada                                  municipio
